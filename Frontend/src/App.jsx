@@ -13,6 +13,8 @@ function App() {
   return (
     <>
     <div className="dark:bg-slate-900 dark:text-white">
+
+      {/* BrowserRoutes here */}
     <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/course" element={authUser? <Courses></Courses>:<Navigate to="/signup"></Navigate> }></Route>
